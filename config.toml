@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "しずか"
 theme = "LeaveIt"
 
 paginate = 12
@@ -76,11 +76,11 @@ preserveTaxonomyNames = true
 
     Email   = "935425887@qq.com"
 
-#   Instagram = "xxoo"
+    Instagram = "xxoo"
 
     Wechat = "/images/me/wechat.jpg"  # Wechat QRcode image
 
-    Facebook = "profile.php?id=100014443054339"
+#   Facebook = "profile.php?id=100014443054339"
 
 #    Telegram = "xxoo"
 
