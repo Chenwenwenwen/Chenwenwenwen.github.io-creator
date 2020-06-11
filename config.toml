@@ -48,7 +48,7 @@ preserveTaxonomyNames = true
     # Author's avatar
     avatar = "/images/me/avatar.png"          
     # Subtitle
-    subtitle = "我会更好，因为我没有停止"        
+    subtitle = "青春は永遠に、はじめからのやり直しだ"        
     # Base CDN URL
     cdn_url = ""           
     # post or other
@@ -70,15 +70,15 @@ preserveTaxonomyNames = true
 
 [params.social]
 
-#   GitHub = "KCVO1995"
+    GitHub = "Chenwenwenwen"
 
 #   Twitter = "people/lee-63-74-79"
 
     Email   = "935425887@qq.com"
 
-#    Instagram = "xxoo"
+#   Instagram = "xxoo"
 
-    Wechat = "/images/me/wechat.png"  # Wechat QRcode image
+    Wechat = "/images/me/wechat.jpg"  # Wechat QRcode image
 
     Facebook = "profile.php?id=100014443054339"
 
