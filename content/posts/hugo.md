@@ -44,9 +44,7 @@ draft: false
 
 3.复制Step2的代码，在cmd上运行。注意这里要把”quickstart“改成“github用户名.github.io-creater!”(这样操作的好处是，上传到GitHub上后方便标识。) 
 
-```
 hugo new site quickstart 
-```
 
 上面的代码将在名为的文件夹中创建一个新的Hugo网站 quickstart 
 
@@ -56,19 +54,15 @@ hugo new site quickstart
 
 这里以主题ananke为例：
 
-```
 cd quickstart //记得将quickstart更改为上一步的创建名
-
 git init 
-
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 
-```
+
 
 将主题添加到站点配置中：
 
-```
- echo 'theme = "ananke"' >> config.toml 
-```
+echo 'theme = "ananke"' >> config.toml 
+
 
 
 
@@ -76,9 +70,8 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anan
 
 posts:放置文章的文件夹
 
-```
- hugo new posts/test.md 
-```
+hugo new posts/test.md 
+
 
  可以用文本文件或 Markdown 编辑器打开文件 post/test.md ，并增加点内容。 
 
@@ -90,22 +83,18 @@ PS：默认创建的是草稿类型，需要将draft值改为false才能看到�
 
 在网站的主目录下
 
-```
 hexo new posts/文章名。md
 hugo --theme=主题名称 
 cd public
 git add -A
 git commit -m "描述内容"
 git push -u origin master
-```
-
 
 
 ### Step5：开启Hugo服务器
 
-```
-  hugo server -D 
-```
+hugo server -D 
+
 
  **浏览至[http：// localhost：1313 /的](http://localhost:1313/)新站点。** 
 
@@ -117,7 +106,7 @@ git push -u origin master
 
  `config.toml`在文本编辑器中打开：
 
-```
+
 baseURL = "https://example.org/" 
 
 languageCode = "en-us" //可换为zh-hans
@@ -125,15 +114,15 @@ languageCode = "en-us" //可换为zh-hans
 title = "My New Hugo Site" 
 
 theme = "ananke" //主题名
-```
+
 
 
 
 ### Step7：生成静态网站
 
-```
- hugo --theme=主题名 --baseUrl="https://YOURNAME.github.io/" 
-```
+
+hugo --theme=主题名 --baseUrl="https://YOURNAME.github.io/" 
+
 
 所有静态页面都会生成到 public 目录下，生成静态网站后并push到你的GitHub Pages 上，就能得到一个在线的个人博客了。
 
@@ -163,7 +152,7 @@ git push -u origin master
 
 # 大功告成
 
-##### 还可以这样做：
+## 还可以这样做：
 
 1. 在你的GitHub上新建一个仓库，命名为github用户名.github.io-creator
 2. 将Hugo根目录的文件上传到此仓库(注意：Hugo根目录上存储着原代码，Hugo根目录丢失，就无法写博客了)
