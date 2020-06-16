@@ -8,7 +8,7 @@ draft: false
 
  Hugo是一个用Go语言编写的静态网站生成器，Hugo一般只需要几秒钟就能生成一个网站（每页少于1毫秒），被称为”世界上最快的网站构建框架“，是最热门的静态网站生成器之一，被广泛采用。 
 
- Hugo 官方主页：https://gohugo.io/ 
+[Hugo 官方主页](https://gohugo.io/ )
 
 
 
@@ -16,35 +16,33 @@ draft: false
 
 ### Step1：安装Hugo
 
-1.下载
+1.下载[Hugo安装](https://github.com/gohugoio/hugo/releases)
 
-[Hugo安装]: https://github.com/gohugoio/hugo/releases	"Hugo安装"
-
-![1591931792129](C:\Users\chenwenjing\AppData\Roaming\Typora\typora-user-images\1591931792129.png)
+![hugo1]( https://raw.githubusercontent.com/Chenwenwenwen/image/master/hugo1.png )
 
 2.下载到安装包，解压后放到x:\xxx\hugo
 
 3.添加环境变量：点击计算机图标-右键-属性-高级系统设置-系统变量-path-添加
 
-![1591941569064](C:\Users\chenwenjing\AppData\Roaming\Typora\typora-user-images\1591941569064.png)
+![hugo2](https://raw.githubusercontent.com/Chenwenwenwen/image/master/hugo2.png)
 
 4.重启终端，运行 `hugo version` 。安装成功就能查看到版本号
 
-![1591941663996](C:\Users\chenwenjing\AppData\Roaming\Typora\typora-user-images\1591941663996.png)
+![hugo3](https://raw.githubusercontent.com/Chenwenwenwen/image/master/hugo3.png)
 
 
 
 ### Step2：创建一个新的Hugo网页
 
-1.进入
-
-[Hugo官网]: https://gohugo.io/	"Hugo官网"
+1.进入[Hugo官网](https://gohugo.io/)
 
 2.点击Quick Start ，Step1操作前面已完成，直接开始Step2
 
 3.复制Step2的代码，在cmd上运行。注意这里要把”quickstart“改成“github用户名.github.io-creater!”(这样操作的好处是，上传到GitHub上后方便标识。) 
 
+```text
 hugo new site quickstart 
+```
 
 上面的代码将在名为的文件夹中创建一个新的Hugo网站 quickstart 
 
@@ -54,14 +52,18 @@ hugo new site quickstart
 
 这里以主题ananke为例：
 
+```text
 cd quickstart //记得将quickstart更改为上一步的创建名
 git init 
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 
+```
 
 
 将主题添加到站点配置中：
 
+```text
 echo 'theme = "ananke"' >> config.toml 
+```
 
 
 
@@ -70,12 +72,14 @@ echo 'theme = "ananke"' >> config.toml
 
 posts:放置文章的文件夹
 
+```text
 hugo new posts/test.md 
+```
 
 
  可以用文本文件或 Markdown 编辑器打开文件 post/test.md ，并增加点内容。 
 
-![1591942864064](C:\Users\chenwenjing\AppData\Roaming\Typora\typora-user-images\1591942864064.png)
+![hugo4](https://raw.githubusercontent.com/Chenwenwenwen/image/master/hugo4.png)
 
 PS：默认创建的是草稿类型，需要将draft值改为false才能看到页面
 
@@ -83,17 +87,23 @@ PS：默认创建的是草稿类型，需要将draft值改为false才能看到�
 
 在网站的主目录下
 
-hexo new posts/文章名。md
+```text
+hexo new posts/文章名.md
 hugo --theme=主题名称 
 cd public
 git add -A
 git commit -m "描述内容"
 git push -u origin master
+```
+
+
 
 
 ### Step5：开启Hugo服务器
 
+```text
 hugo server -D 
+```
 
 
  **浏览至[http：// localhost：1313 /的](http://localhost:1313/)新站点。** 
@@ -106,14 +116,12 @@ hugo server -D
 
  `config.toml`在文本编辑器中打开：
 
-
+```text
 baseURL = "https://example.org/" 
-
 languageCode = "en-us" //可换为zh-hans
-
 title = "My New Hugo Site" 
-
 theme = "ananke" //主题名
+```
 
 
 
@@ -128,17 +136,12 @@ hugo --theme=主题名 --baseUrl="https://YOURNAME.github.io/"
 
 如果一切顺利，所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
 
-```
+```text
 cd public 
-
 git init 
-
 git remote add origin https://github.com/coderzh/coderzh.github.io.git 
-
 git add -A 
-
 git commit -m "first commit" 
-
 git push -u origin master 
 ```
 
