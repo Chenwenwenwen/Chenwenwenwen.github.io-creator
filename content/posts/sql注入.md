@@ -2,7 +2,7 @@
 title: "Sql注入基础原理"
 date: 2020-07-03T10:27:49+08:00
 draft: false
-categories: ["编程·技术"]
+categories:
  - 
 tags:
  - 
