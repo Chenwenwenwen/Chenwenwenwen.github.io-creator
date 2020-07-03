@@ -91,12 +91,3 @@ preserveTaxonomyNames = true
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
-[params.valine]
- enable = true
- appId = 'OvTg5G1h4Qi5YFdoxMN1AKdx-gzGzoHsz'
- appKey = 'nKsq2pVzlTJ5WENA4egcakKD'
- notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
- verify = false # Verification code
- avatar = 'mm'
- placeholder = '说点什么吧...'
- visitor = true
