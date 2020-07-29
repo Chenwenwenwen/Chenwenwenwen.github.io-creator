@@ -1,6 +1,8 @@
 ---
 title: "如何使用Hugo搭建个人博客"
 date: 2020-06-12T11:07:48+08:00
+categories: ["博客"]
+tags: ["hugo"]
 draft: false
 ---
 
@@ -18,17 +20,17 @@ draft: false
 
 1.下载[Hugo安装](https://github.com/gohugoio/hugo/releases)
 
-![hugo1]( https://raw.githubusercontent.com/Chenwenwenwen/image/master/hugo1.png )
+![hugo1]( /images/assets/hugo1.png )
 
 2.下载到安装包，解压后放到x:\xxx\hugo
 
 3.添加环境变量：点击计算机图标-右键-属性-高级系统设置-系统变量-path-添加
 
-![hugo2](https://raw.githubusercontent.com/Chenwenwenwen/image/master/hugo2.png)
+![hugo2](/images/assets/hugo2.png)
 
 4.重启终端，运行 `hugo version` 。安装成功就能查看到版本号
 
-![hugo3](https://raw.githubusercontent.com/Chenwenwenwen/image/master/hugo3.png)
+![hugo3](/images/assets/hugo3.png)
 
 
 
@@ -79,7 +81,7 @@ hugo new posts/test.md
 
  可以用文本文件或 Markdown 编辑器打开文件 post/test.md ，并增加点内容。 
 
-![hugo4](https://raw.githubusercontent.com/Chenwenwenwen/image/master/hugo4.png)
+![hugo4](/images/assets/hugo4.png)
 
 PS：默认创建的是草稿类型，需要将draft值改为false才能看到页面
 
@@ -88,7 +90,7 @@ PS：默认创建的是草稿类型，需要将draft值改为false才能看到�
 在网站的主目录下
 
 ```text
-hexo new posts/文章名.md
+hugo new posts/文章名.md
 hugo --theme=主题名称 
 cd public
 git add -A
@@ -106,7 +108,7 @@ hugo server -D
 ```
 
 
- **浏览至[http：// localhost：1313 /的](http://localhost:1313/)新站点。** 
+ **浏览至[http：// localhost：1313 /](http://localhost:1313/)的新站点。** 
 
  随意编辑或添加新内容，只需在浏览器中刷新即可快速查看更改（您可能需要在Web浏览器中强制刷新，通常使用Ctrl-R之类的功能）。 
 

@@ -1,6 +1,8 @@
 ---
 title: "使用nvm管理多版本Node"
 date: 2020-06-16T14:07:01+08:00
+categories: ["工具 · 配置"]
+tags: ["配置"]
 draft: false
 ---
 
@@ -17,7 +19,7 @@ draft: false
 
 1. nvm-noinstall.zip 下载完成解压在C:\dev\nvm。里面的文件列表如下
 
-   ![nvm1]( https://raw.githubusercontent.com/Chenwenwenwen/image/master/nvm1.png )
+   ![nvm1](/images/assets/nvm1.png )
 
 2. 双击install.cmd，直接回车，生成目录settings.txt文件。把这个文件剪切到C:\dev\nvm目录中。
 
@@ -50,11 +52,11 @@ draft: false
 
    成功则显示如下：
 
-   ![nvm2]( https://raw.githubusercontent.com/Chenwenwenwen/image/master/nvm2.png )
+   ![nvm2]( /images/assets/nvm2.png )
 
 4. 在cmd输入nvm 查看nvm详细信息，如果出现详细信息，所以已经安装成功，但是在window10 可能会出现
    ‘nvm’ 不是内部或外部命令，也不是可运行的程序或批处理文件。这是cmd的问题，我们可以打开window+r输入powershell打开powershell，powershell可以看作是cmd 的升级版
-   ![nvm3]( https://raw.githubusercontent.com/Chenwenwenwen/image/master/nvm3.png )
+   ![nvm3]( /images/assets/nvm3.png )
 
 
 

@@ -1,10 +1,9 @@
 ---
 title: "LeaveIt主题功能优化"
 date: 2020-07-03T16:28:52+08:00
+categories: ["博客"]
+tags: ["hugo"]
 draft: false
-categories:
- - 
-tags:
 ---
 
 # 一、评论系统

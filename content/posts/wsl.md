@@ -1,6 +1,8 @@
 ---
 title: "在非系统盘安装 WSL"
 date: 2020-06-18T10:51:03+08:00
+categories: ["工具 · 配置"]
+tags: ["配置"]
 draft: false
 ---
 
@@ -36,7 +38,7 @@ cd Ubuntu1804
 
 检查是否有打开一下Windows功能
 
-![wsl1]( https://raw.githubusercontent.com/Chenwenwenwen/image/master/wsl1.jpg)
+![wsl1](/images/assets/wsl1.jpg)
 
 
 

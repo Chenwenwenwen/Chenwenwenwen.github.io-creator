@@ -1,11 +1,9 @@
 ---
 title: "Sql注入基础原理"
 date: 2020-07-03T10:27:49+08:00
+categories: ["编程 · 技术"]
+tags: ["基础知识"]
 draft: false
-categories:
- - 
-tags:
- - 
 ---
 
 ## 一、Sql注入简介
@@ -30,13 +28,13 @@ tags:
 
  三层架构是一种**线性关系**。 
 
- ![img](https://upload-images.jianshu.io/upload_images/6230889-585c75c52b4d235b.png) 
+ ![img](/images/assets/sql注入.jpg) 
 
 
 
 ## 三、Sql 注入漏洞详解
 
-### 3.1Sql注入产生的原因及威胁
+### Sql注入产生的原因及威胁
 
 刚刚讲过当我们访问动态网页时, Web 服务器会向数据访问层发起 Sql 查询请求，如果权限验证通过就会执行 Sql 语句。
  这种网站内部直接发送的Sql请求一般不会有危险，但实际情况是很多时候需要**结合**用户的输入数据动态构造 Sql 语句，如果用户输入的数据被构造成恶意 Sql 代码，Web 应用又未对动态构造的 Sql 语句使用的参数进行审查，则会带来意想不到的危险。
@@ -129,8 +127,8 @@ select * from <表名> where id = 'x and 1=2'
  `select * from <表名> where id = 'x'`
  这种类型我们同样可以使用and '1'='1'和 and '1'='1'来判断：
 
-- 1. Url 地址中输入 `http://xxx/abc.php?id= x' and '1'='1` 页面运行正常，继续进行下一步。
-- 1. Url 地址中继续输入 `http://xxx/abc.php?id= x' and '1'='2` 页面运行错误，则说明此 Sql 注入为字符型注入。
+- Url 地址中输入 `http://xxx/abc.php?id= x' and '1'='1` 页面运行正常，继续进行下一步。
+- Url 地址中继续输入 `http://xxx/abc.php?id= x' and '1'='2` 页面运行错误，则说明此 Sql 注入为字符型注入。
 
 **分析：**
 

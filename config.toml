@@ -46,7 +46,7 @@ preserveTaxonomyNames = true
     # Author's name
     author = "wen"                          
     # Author's avatar
-    avatar = "/images/me/avatar.png"          
+    avatar = "/images/me/avatar.jpg"          
     # Subtitle
     subtitle = "青春は永遠に、はじめからのやり直しだ"        
     # Base CDN URL
@@ -76,7 +76,7 @@ preserveTaxonomyNames = true
 
     Email   = "935425887@qq.com"
 
-    Instagram = "xxoo"
+#   Instagram = "xxoo"
 
     Wechat = "/images/me/wechat.jpg"  # Wechat QRcode image
 
