@@ -45,7 +45,7 @@ draft: false
    正常结果：
 
    ```reStructuredText
-    rvm 1.29.9 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io] 
+    rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io] 
    ```
 
    
@@ -61,7 +61,7 @@ draft: false
 2. 安装你想要的ruby版本
 
    ```reStructuredText
-   rvm install 2.5.3
+   rvm install 2.5.8
    ```
 
 3. 如果报以下错误
@@ -75,7 +75,7 @@ draft: false
 4. 使用指定版本 
 
    ```reStructuredText
-   ruby rvm 1.9.2
+   ruby rvm 2.5.8
    ```
 
 5. 查看当前 ruby 版本
@@ -87,7 +87,7 @@ draft: false
 6. 设置 RVM 默认版本 
 
    ```reStructuredText
-   rvm --default use 1.9.2
+   rvm --default use 2.5.8
    ```
 
 7. 使用默认版本 
@@ -99,7 +99,7 @@ draft: false
 8. 删除一个版本 
 
    ```text
-   rvm remove 1.9.2 
+   rvm remove 2.5.8 
    ```
 
    
