@@ -1,5 +1,5 @@
 ---
-title: "Vue 8"
+title: "echart、导出、弹窗组件"
 date: 2020-08-27T14:44:51+08:00
 categories: ["编程 · 技术"]
 tags: ["Vue"]
@@ -340,7 +340,7 @@ export default {
 
 ## 导出
 
-```
+```js
 const _query = JSON.parse(JSON.stringify(this.query))
       let result = ''
       Object.entries(_query).forEach(item => {
