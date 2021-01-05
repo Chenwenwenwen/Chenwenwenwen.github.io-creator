@@ -9,7 +9,7 @@ draft: false
 
 效果：
 
-![手风琴导航效果图](/images/assets/手风琴导航效果图效果图.png)
+![手风琴导航效果图](/images/assets/手风琴导航效果图效果图.jpg)
 
 ### html代码
 
